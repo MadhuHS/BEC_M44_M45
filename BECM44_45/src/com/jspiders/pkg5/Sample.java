@@ -12,7 +12,6 @@ public class Sample extends Demo
 		
 		Sample s1 = new Sample();
 		System.out.println(s1.v2);
-		s1.test2();
-		
+		s1.test2();	
 	}
 }
