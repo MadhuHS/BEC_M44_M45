@@ -1,9 +1,8 @@
 package com.jspiders.exceptions;
 
-public class Mainclass2 {
+public class Mainclass3 {
 
-	public static void test(int num1, int num2) 
-	{
+	public static void test(int num1, int num2) {
 		System.out.println("test2() starts...");
 		int a1[] = { 20, 8, 30, 35 };
 		try 
@@ -13,16 +12,14 @@ public class Mainclass2 {
 
 			System.out.println("array element at index " + res + " : " + a1[res]);
 		} 
-		
-		catch (ArithmeticException ref) 
+		catch (Exception ref) 
 		{
-			System.out.println("ArithmeticException handled");
-			System.out.println("CANNOT DIVIDE BY ZERO");
+			System.out.println("Exception handled");
+			ref.printStackTrace();
 		}
-		catch (ArrayIndexOutOfBoundsException ref) 
+		finally
 		{
-			System.out.println("ArrayIndexOutOfBoundsException handled");
-			System.out.println("INVALID INDEX");
+			System.out.println("finally executed");
 		}
 
 		System.out.println("test2() ends...");
@@ -30,7 +27,7 @@ public class Mainclass2 {
 
 	public static void main(String[] args) {
 		System.out.println("Program starts...");
-		test(50,2);
+		test(50,25);
 		System.out.println("Program ends...");
 	}
 }

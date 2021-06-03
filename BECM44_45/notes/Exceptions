@@ -44,7 +44,7 @@ Exception Handling
  Exception e2 = new ArrayIndexOutOfBoundsException(); 
   
   
-  Generalized try-catch block
+ Generalized try-catch block
   
   
  finally block
