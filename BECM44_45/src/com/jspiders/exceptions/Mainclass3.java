@@ -12,7 +12,7 @@ public class Mainclass3 {
 
 			System.out.println("array element at index " + res + " : " + a1[res]);
 		} 
-		catch (Exception ref) 
+		catch(Exception ref) 
 		{
 			System.out.println("Exception handled");
 			ref.printStackTrace();
@@ -27,7 +27,7 @@ public class Mainclass3 {
 
 	public static void main(String[] args) {
 		System.out.println("Program starts...");
-		test(50,25);
+		test(50,0);
 		System.out.println("Program ends...");
 	}
 }
