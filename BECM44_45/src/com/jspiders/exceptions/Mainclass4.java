@@ -4,9 +4,9 @@ public class Mainclass4
 {
 	public static int test(int num1, int num2)throws ArithmeticException
 	{
-		System.out.println("test2() starts...");
+		System.out.println("test() starts...");
 		int res = num1 / num2;
-		System.out.println("test2() ends...");
+		System.out.println("test() ends...");
 		return res;
 	}
 	
