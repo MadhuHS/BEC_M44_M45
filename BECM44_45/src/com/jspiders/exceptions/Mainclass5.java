@@ -21,7 +21,7 @@ public class Mainclass5
 			 
 			 if(attempt == 0)
 			 {
-				 String reason = "Number of attempts exceded :"+3;
+				 String reason = "Number of attempts exceded : 3";
 				 IllegalArgumentException i1 = new IllegalArgumentException(reason);
 				 throw i1;
 			 }
