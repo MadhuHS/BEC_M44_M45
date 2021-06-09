@@ -14,10 +14,10 @@ public class Mainclass2
       StringBuffer sb1 = new StringBuffer("hello");
       StringBuffer sb2 = new StringBuffer("world");
       
+      
       test(10,20);
       test(2.5,1.25);    
-      test("hello","world");
-      
+      test("hello","world");   
 	}
 	
 }

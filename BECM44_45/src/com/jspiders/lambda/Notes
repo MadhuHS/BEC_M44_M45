@@ -1,0 +1,18 @@
+
+Any interface which contains only one abstract method is called
+as Functional interface.
+
+Lambda Functions
+
+It is an Anonymous function which is developed to provide
+implimentation for abstract method present in functional interface
+
+ 
+ InterfaceName ref_var	= (args list)-> 
+		                  {
+			               stmts..
+			               stmts..
+			               return;
+		                  };
+		                  
+	-> lambda operator
