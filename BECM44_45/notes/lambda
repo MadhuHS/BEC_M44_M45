@@ -16,3 +16,6 @@ implimentation for abstract method present in functional interface
 		                  };
 		                  
 	-> lambda operator
+	
+* The class where lambda function is created should not implement the Functional Interface.
+* Lambda functions can be passed as an argument to a method/constructor.

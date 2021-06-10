@@ -1,0 +1,11 @@
+
+* Garbage collector deletes all the derefernced objects from the heap area
+
+* We can call the Garbage collector by using System.gc()
+
+* Garbage collector calls the finalize() of the class before the object is deleted from heap.
+
+* In order delete any object from the heap area during the execution
+  - reintialize all the reference variables pointing to the object to null
+  - then invoke Garbage collector by using System.gc();
+  
