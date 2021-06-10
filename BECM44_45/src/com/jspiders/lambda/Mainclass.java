@@ -5,12 +5,19 @@ interface Run {
 	public void count(int num);
 }
 
-public class Mainclass
-{	
+public class Mainclass 
+{
+	public static void test(Run ref)
+	{
+		System.out.println("ref : " + ref);
+		ref.count(4);
+	}
+
 	public static void main(String[] args) 
 	{
 		Run r1 = (int num) -> {
-			for (int i = 1; i <= num; i++) {
+			for (int i = 1; i <= num; i++)
+			{
 				System.out.println(i);
 			}
 
@@ -18,14 +25,16 @@ public class Mainclass
 		};
 
 		Run r2 = (int num) -> {
-			for (int j = num; j >= 1; j--) {
+			for (int j = num; j >= 1; j--) 
+			{
 				System.out.println(j);
 			}
 
 			System.out.println();
 		};
 
-		r1.count(4);
-		r2.count(4);
+		test(r1);
+		test(r2);
+
 	}
 }

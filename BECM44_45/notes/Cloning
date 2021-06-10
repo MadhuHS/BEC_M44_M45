@@ -1,0 +1,14 @@
+
+Object cloning : creating a new object using the exisiting object and its Data in the
+                 DATA MEMBERS is called object cloning
+                 
+- To clone an object the class must override the clone() of the Object class  
+
+- The class should also implements the Cloneable interface
+
+- Cloneable is a marker interface which is an empty interface without any methods or variables.
+
+- A class implements the Cloneable interface to
+  indicate to the clone() method that it is legal for that method to make a
+  DATA MEMBER-for-DATA MEMBER copy of Objects of that class.           
+                 
