@@ -44,7 +44,7 @@ public class Mainclass
             
       u1.updatePhn(898778888l);
       System.out.println("u1 : "+u1.toString());
-      
+            
       try 
       {
 		User u2 = (User)u1.clone();

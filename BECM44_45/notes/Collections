@@ -1,0 +1,489 @@
+   Array                Collection
+
+1. Fixed in size       1. Collection is growable in nature
+                          Size of the collection can be increased
+                          or decreased at the runtime.
+
+2. NO built-in         2. Collection has built-in methods
+   method support         to perform basic and advanced operations
+                          on the group of data.   
+                          
+3. Don't have any      3. Every collection is built by using
+   underlying DS          at least one DS
+   
+  
+  
+ * Collection is a group of references which is represented as One unit.
+ 
+ ********** IF YOU TRY TO INSERT ANY PRIRMITIVE VALUE TO ANY COLLECTION , THEN JVM
+    1. CREATES THE WRAPPER CLASS OBJECT OF CORRESPONDING DATA TYPE
+    2. STORES THE ADDRESS IN THE GIVEN COLLECTION
+    
+ * Collection are of 3 types
+   
+   1. List
+   2. Set
+   3. Queue
+   
+   
+   List type of Collection
+   
+   * List can store duplicates.
+   * List has index.
+   * List support multiple null values.
+   * List preserve insertion order.
+   
+   
+   ArrayList
+   
+   * ArrayList can store duplicates.
+   * ArrayList has index.
+   * ArrayList support multiple null values.
+   * ArrayList preserve insertion order.
+   
+   * Resizable array is the underlying Data Structure of ArrayList.
+   
+   Constructors of ArrayList
+   
+   ArrayList()
+   Constructs an empty list with an initial capacity of ten.
+   
+   ArrayList(Collection c)
+   Constructs a list containing the elements 
+   of the specified collection.
+   
+   ArrayList(int initialCapacity)
+   Constructs an empty list with the specified initial capacity.
+   
+   Methods of ArrayList
+   
+   *
+   *
+   ..
+   
+   * ArrayList implementation is not synchronized. 
+   * ArrayList is NOT THREAD SAFE.
+   * If multiple threads access an ArrayList concurrently, 
+     and at least one of the threads modifies the list structurally, 
+     it will impact on other threads.
+  ------------------------------------------------------------------------ 
+   
+  Vector
+   
+   * Vector can store duplicates.
+   * Vector has index.
+   * Vector support multiple null values.
+   * Vector preserve insertion order.
+   
+   * Resizable array is the underlying Data Structure of Vector.
+   
+   * The increase of capacity can be controlled by the programmer
+     by specifying the capacityIncrement in the constructor.
+     
+   Constructors of Vector 
+     
+   Vector()
+   Constructs an empty vector so that its internal 
+   data array has size 10 and its standard 
+   capacity increment is zero.
+   
+   Vector(Collection c)
+   Constructs a vector containing the elements 
+   of the specified collection.
+  
+   Vector(int initialCapacity)
+   Constructs an empty vector with the specified 
+   initial capacity and with its capacity increment 
+   equal to zero.
+   
+   Vector(int initialCapacity, int capacityIncrement)
+   Constructs an empty vector with the specified initial 
+   capacity and capacity increment.
+   
+   * Vector implementation is synchronized. 
+   * Vector is THREAD SAFE.
+   * If multiple threads access an Vector concurrently, 
+     and at least one of the threads modifies the Vector structurally, 
+     it will NOT impact on other threads.
+   
+----------------------------------------------------------------------
+   Set type of collection
+   
+   * Set do not store duplicates.
+   * Set don not have index.
+   * Set support to store ONLY ONE null values.
+   * Set do not preserve insertion order.
+   
+    
+   HashSet
+   
+   * HashSet do not store duplicates.
+   * HashSet don not have index.
+   * HashSet support to store ONLY ONE null values.
+   * HashSet do not preserve insertion order.
+   
+   * Underlying Data Structure of HashSet is Hash Table.
+   
+   Iterator :
+   
+   * Iterator is cursor which is used to retrieve the element
+     present in any given collection.
+     
+   * Iterator is created automatically whenever the collection
+     object is created.
+     
+   * For every Collection separate iterator is created.
+   
+   * We can access the iterator of the given collection
+     by calling iterator().
+     
+   * The iterator reference returned by the iterator()
+     should be stored within a reference variable 
+     of Iterator type.
+    
+   Load Factor : It is a threshold that decides when should be
+                 the collection created based on elements added.
+     
+   Constructor of HashSet 
+   HashSet()
+   Constructs a new, empty set with
+   initial capacity (16) and load factor (0.75).
+   
+   HashSet(Collection c)
+   Constructs a new set containing the elements 
+   in the specified collection.
+   
+   HashSet(int initialCapacity)
+   Constructs a new, empty set with specified 
+   initial capacity and default load factor (0.75).
+   
+   HashSet(int initialCapacity, float loadFactor)
+   Constructs a new, empty set with the specified
+   initial capacity and the specified load factor.
+   
+   * HashSet implementation is not synchronized. 
+   * HashSet is NOT THREAD SAFE.
+   * If multiple threads access an HashSet concurrently, 
+     and at least one of the threads modifies the list structurally, 
+     it will impact on other threads.
+   
+--------------------------------------------------------------------------------------
+   
+    LinkedHashSet
+   
+   * LinkedHashSet do not store duplicates.
+   * LinkedHashSet don not have index.
+   * LinkedHashSet support to store ONLY ONE null values.
+   * LinkedHashSet always preserve insertion order.
+   
+   * Underlying Data Structures of LinkedHashset 
+     is Hash Table and Linked list.
+     
+   Constructor of LinkedHashSet 
+   LinkedHashSet()
+   Constructs a new, empty set with
+   initial capacity (16) and load factor (0.75).
+   
+   LinkedHashSet(Collection c)
+   Constructs a new set containing the elements 
+   in the specified collection.
+   
+   LinkedHashSet(int initialCapacity)
+   Constructs a new, empty set with specified 
+   initial capacity and default load factor (0.75).
+   
+   LinkedHashSet(int initialCapacity, float loadFactor)
+   Constructs a new, empty set with the specified
+   initial capacity and the specified load factor.
+   
+   * LinkedHashSet implementation is not synchronized. 
+   * LinkedHashSet is NOT THREAD SAFE.
+   * If multiple threads access an LinkedHashSet concurrently, 
+     and at least one of the threads modifies the list structurally, 
+     it will impact on other threads.  
+   
+ ----------------------------------------
+ 
+ TreeSet
+ 
+ Tree Ds
+ 
+ * It is a Non-Linear DS where data is stored according to
+   some relation.
+   
+ * Tree consists of Nodes and Links.
+ 
+ * Node consist of data and address of other data.
+ 
+ * The link represents the relation between one node to another node.
+ 
+ 
+ Binary Search Tree
+ 
+ * It is a type of tree where a parent node can have maximum
+   of two child nodes.
+ 
+ 
+ TreeSet
+ 
+   * TreeSet do not store duplicates.
+   * TreeSet do not have index.
+   * TreeSet do not support to store null values (not even one null).
+     if you try to add null value then JVM throws NullPointerException 
+  
+   * TreeSet do not preserve insertion order.
+   * TreeSet do not allow heterogeneous data.
+   
+   * Underlying DS of TreeSet is Binary Search Tree and data
+     is retrieved using in-order technique.
+    
+    Constructors of TreeSet
+     
+    TreeSet()
+    Constructs a new, empty tree set, 
+    sorted according to the natural ordering of its elements.
+    
+    TreeSet(Comparator comparator)
+    Constructs a new, empty tree set, 
+    sorted according to the specified comparator.
+    
+    TreeSet(Collection c)
+    Constructs a new tree set containing the 
+    elements in the specified collection, 
+    sorted according to the natural ordering of its elements.
+    
+   
+    * Only Objects of those classes which are implementing Comparable Interface
+      and Overriding compareTo() can be added to TreeSet.
+ 
+    * If you create a TreeSet object by using TreeSet() then
+      elements sorted according to the natural ordering depending
+      on compareTo() present in the class.
+      
+    * If you create a TreeSet object by using TreeSet(Comparator comp) then
+      elements sorted according to the customized ordering depending
+      on compare() present in the programmer define class.
+ 
+     Comparable interface:
+    
+    * Comparable interface is used to provide Natural Sorting Order for 
+      the object.
+    
+    * An Object is said to comparable if the class implements Comparable
+      interface and overrides compareTo().
+      
+      
+     Comparator Interface
+     
+     * Comparator Interface is used to provide Customized Sorting Order
+       for the Object.
+       
+     * To use Comparator Interface we have to follow 4 steps
+       
+       - Create a class that Implements Comparator Interface.
+       - Override compare() and specify your customized logic
+         to sort the objects.
+       - Create the implementation class Object.
+       - Pass implementation class Object's reference to the
+         constructor of TreeSet.
+   
+   -----------------------------------------------------------------------------
+   
+   Queue  
+   * Queue stores duplicates.
+   * Queue has index.
+   * Queue support to store multiple null values.
+   * Queue do preserve insertion order.
+     
+      
+    Priority Queue
+    
+   * Priority Queue store duplicates.
+   * Priority Queue do not have index.
+   * Priority Queue do not support to store null values (not even one null).
+     if you try to add null value then JVM throws NullPointerException 
+  
+   * Priority Queue do not preserve insertion order.
+   * Priority Queue do not allow heterogeneous data.
+   
+   * Underlying DS of Priority Queue is Priority Heap.
+   * Data from Priority Queue is retrieved using poll().
+   
+   * poll() : Retrieves and removes the head element of the queue
+   
+   
+    Constructors of Priority Queue
+     
+    PriorityQueue()
+    Creates a PriorityQueue with the 
+    default initial capacity (11) that orders 
+    its elements according to their natural ordering.
+    
+    PriorityQueue(Comparator comparator)
+    Creates a PriorityQueue with the default initial capacity 
+    and whose elements are ordered according to the specified comparator.
+   
+    PriorityQueue(int initialCapacity)
+    Creates a PriorityQueue with the specified initial capacity 
+    that orders its elements according to their natural ordering.
+   
+    PriorityQueue(int initialCapacity, Comparator comparator)
+    Creates a PriorityQueue with the specified initial capacity 
+    that orders its elements according to the specified comparator.
+          
+     
+    * Only Objects of those classes which are implementing Comparable Interface
+      and Overriding compareTo() can be added to PriorityQueue.
+ 
+    * If you create a PriorityQueue object by using PriorityQueue() then
+      elements sorted according to the natural ordering depending
+      on compareTo() present in the class.
+      
+    * If you create a PriorityQueue object by using PriorityQueue(Comparator comp) then
+      elements sorted according to the customized ordering depending
+      on compare() present in the programmer define class. 
+      
+  NOTE: ANY DATA STRUCTURE BASED ON NODES WILL NOT HAVE ANY INITIAL CAPACITY    
+      
+   LinkedList  
+   * LinkedList stores duplicates.
+   * LinkedList has index.
+   * LinkedList support to store multiple null values.
+   * LinkedList do preserve insertion order.
+   * Underlying DS of LinkedList is Doubly-LinkedList.
+   * Data from Priority Queue is retrieved using poll() or get(index).
+   
+   Constructors of LinkedList
+   
+   LinkedList()
+   Constructs an empty list.
+
+   LinkedList(Collection<? extends E> c)
+   Constructs a list containing the elements of the specified collection.
+   
+ ------------------------------------------------------------------------------------------
+ 
+ 
+   HashMap
+     
+   * HashMap do not store duplicate keys.
+   * HashMap stores duplicate value.
+   * HashMap do not have index.
+   * KEY and VALUE are added to HashMap using put(key,value);
+   * Value from HashMap is retrieved using get(key).
+   * If you try to add a New value with Old Key then,
+     the old value will be replaced with the new value for the given key.
+   * Only one key can be Null.
+   * Values in HashMap can be Null.
+   * HashMap do not preserve insertion order.
+   * Underlying DS of HashMap is HashTable.
+   
+   
+   
+    LinkedHashMap
+     
+   * LinkedHashMap do not store duplicate keys.
+   * LinkedHashMap stores duplicate value.
+   * LinkedHashMap do not have index.
+   * KEY and VALUE are added to LinkedHashMap using put(key,value);
+   * Value from LinkedHashMap is retrieved using get(key).
+   * If you try to add a New value with Old Key then,
+     the old value will be replaced with the new value for the given key.
+   * Only one key can be Null.
+   * Values in LinkedHashMap can be Null.
+   * LinkedHashMap do PRESERVE the insertion order.
+   * Underlying DS of LinkedHashMap are LinkedList and HashTable.
+   
+   
+   
+   
+    TreeMap
+     
+   * TreeMap do not store duplicate keys.
+   * TreeMap stores duplicate value.
+   * TreeMap do not have index.
+   * KEY and VALUE are added to TreeMap using put(key,value);
+   * Value from TreeMap is retrieved using get(key).
+   * If you try to add a New value with Old Key then,
+     the old value will be replaced with the new value for the given key.
+   * NOT EVEN one key can be Null.
+   * Values in TreeMap can be Null.
+   * TreeMap DO NOT PRESERVE the insertion order.
+   * Underlying DS of TreeMap are Binary Search Tree.
+   
+   * The values in TreeMap are sorted according to Keys.
+   * The keys in TreeMap should be object of a class that implements
+     Comparable Interface and Override compareTo().
+   * The keys in TreeMap should be Homogeneous.
+   * The values in TreeMap can be be Heterogeneous.
+   
+   Generics
+   
+   * Generics are used to achieve two goals  
+     1.Making the given collection Type Safe.
+     2.To avoid Unwanted down casting.
+     
+    * generics are declared with Collection Decleartion
+    * generics should be always written within angular brackets.
+     
+     Syntax : CollectionName<Type> ref = new CollectionName<Type>();
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
