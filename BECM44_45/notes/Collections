@@ -57,7 +57,7 @@
    
    Methods of ArrayList
    
-   *
+   *add()
    *
    ..
    
@@ -105,6 +105,35 @@
    * If multiple threads access an Vector concurrently, 
      and at least one of the threads modifies the Vector structurally, 
      it will NOT impact on other threads.
+     
+ ----------------------------------------------------------------------------------------------------------------------------------------         
+   LinkedList  
+   * LinkedList stores duplicates.
+   * LinkedList has index.
+   * LinkedList support to store multiple null values.
+   * LinkedList do preserve insertion order.
+   * Underlying DS of LinkedList is Doubly-LinkedList.
+   * Data from LinkedList is retrieved using poll() or get(index).
+   
+   * Node consist of data and address of other data.
+   
+   Constructors of LinkedList
+   
+   LinkedList()
+   Constructs an empty list.
+
+   LinkedList(Collection c)
+   Constructs a list containing the elements of the specified collection.
+   
+   NOTE: ANY DATA STRUCTURE BASED ON NODES WILL NOT HAVE ANY INITIAL CAPACITY   
+         
+         
+   * LinkedList implementation is NOT synchronized. 
+   * LinkedList is NOT THREAD SAFE.
+   * If multiple threads access an Vector concurrently, 
+     and at least one of the threads modifies the Vector structurally, 
+     it will impact on other threads.
+      
    
 ----------------------------------------------------------------------
    Set type of collection
@@ -343,24 +372,7 @@
       elements sorted according to the customized ordering depending
       on compare() present in the programmer define class. 
       
-  NOTE: ANY DATA STRUCTURE BASED ON NODES WILL NOT HAVE ANY INITIAL CAPACITY    
-      
-   LinkedList  
-   * LinkedList stores duplicates.
-   * LinkedList has index.
-   * LinkedList support to store multiple null values.
-   * LinkedList do preserve insertion order.
-   * Underlying DS of LinkedList is Doubly-LinkedList.
-   * Data from Priority Queue is retrieved using poll() or get(index).
-   
-   Constructors of LinkedList
-   
-   LinkedList()
-   Constructs an empty list.
-
-   LinkedList(Collection<? extends E> c)
-   Constructs a list containing the elements of the specified collection.
-   
+ 
  ------------------------------------------------------------------------------------------
  
  
