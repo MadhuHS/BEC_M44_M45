@@ -242,7 +242,7 @@
    
  * Tree consists of Nodes and Links.
  
- * Node consist of data and address of other data.
+ * Node consist of data and address of other Node.
  
  * The link represents the relation between one node to another node.
  
