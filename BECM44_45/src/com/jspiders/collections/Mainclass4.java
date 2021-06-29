@@ -23,9 +23,7 @@ public class Mainclass4
 		{
 		  System.out.println(str);
 		}
-		
-		System.out.println();
-		
+				
 		//read all elements->Iterator
 	    Iterator<String>  i1 = hs1.iterator();
 	    while(i1.hasNext())
