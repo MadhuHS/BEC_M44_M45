@@ -300,7 +300,14 @@
     
     * An Object is said to comparable if the class implements Comparable
       interface and overrides compareTo().
-      
+    
+    Why do we need Customized Sorting in Any Collection?
+
+      * The Default Sorting Order cannot be used in current module
+      * The Class for which object is created do not implement <<Comparable>> and do 
+        not override compareTo()
+
+     How to achieve Customized Sorting?
       
      Comparator Interface
      
