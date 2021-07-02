@@ -386,12 +386,13 @@
    HashMap
      
    * HashMap do not store duplicate keys.
+   * If you try to add a New value with Old Key then,
+     the old value will be updated with the new value for the given key.
    * HashMap stores duplicate value.
    * HashMap do not have index.
    * KEY and VALUE are added to HashMap using put(key,value);
    * Value from HashMap is retrieved using get(key).
-   * If you try to add a New value with Old Key then,
-     the old value will be replaced with the new value for the given key.
+   * If the given key is invalid or not present in HashMap then it return NULL
    * Only one key can be Null.
    * Values in HashMap can be Null.
    * HashMap do not preserve insertion order.
